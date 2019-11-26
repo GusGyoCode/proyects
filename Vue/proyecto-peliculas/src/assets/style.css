@@ -1,0 +1,244 @@
+body {
+  margin: 0px;
+  padding: 0px;
+
+  /*Fuentes*/
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+.header {
+  z-index: 1000;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+}
+.logo .logo-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  display: block;
+  font-weight: bold;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.item-link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.item-link:hover {
+  color: rgb(186, 30, 201);
+  background: #fff;
+}
+.banner {
+  position: relative;
+  top: -60px;
+  width: 100%;
+  padding: 9rem 3rem;
+  text-align: center;
+  background: url("banner.jpg");
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-blend-mode: soft-light !important;
+  background-size: cover !important;
+  background-position: center !important;
+  box-sizing: border-box !important;
+}
+.item-form label {
+  color: #fff;
+  width: 100%;
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.item-form input {
+  border-radius: 3px;
+  padding: 5px;
+  border: none;
+  font-size: 15px;
+  width: 50%;
+}
+.main .container {
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+}
+.item-article {
+  width: 100%;
+  border: 1px solid rgba(204, 204, 204, 0.336);
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px;
+  -webkit-box-shadow: 5px 7px 5px 0px rgba(204, 204, 204, 0.55);
+  -moz-box-shadow: 5px 7px 5px 0px rgba(204, 204, 204, 0.55);
+  box-shadow: 5px 7px 5px 0px rgba(204, 204, 204, 0.55);
+  box-sizing: border-box;
+}
+.article-img {
+  padding: 10px;
+}
+.article-img img {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+.article-title {
+  text-align: center;
+}
+.article-link,
+.article-date {
+  color: rgb(160, 159, 159);
+  display: block;
+  padding: 5px;
+}
+.article-link {
+  text-decoration: none;
+}
+.article-link:hover {
+  color: rgb(186, 30, 201);
+}
+.main .container .main-title {
+  display: block;
+  width: 100%;
+  color: rgb(163, 163, 163);
+}
+.footer{
+  width: 100%;
+  background: rgba(228, 228, 228, 0.788);
+  text-align: center;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.inputs{
+  width: 100%;
+}
+article{
+    box-sizing: border-box;
+}
+.info-title, .info-subtitle, .info-nav, .info-vote{
+  color: #fff;
+}
+
+
+.info-container{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+}
+.info-container h2{
+  font-size: 30px;
+}
+.info-release{
+  background: rgb(94, 94, 94);
+  padding: 5px 5px 5px 0px;
+  border-radius: 5px;
+  color: rgb(230, 230, 230);
+}
+.info-release strong{
+  background: rgb(159, 52, 221);
+  padding: 5px;
+  border-radius: 5px;
+}
+.info-item{
+  list-style: none;
+  display: block;
+  margin: 0;  
+  padding: 5px; 
+  background: rgb(94, 94, 94);
+  border-radius: 5px;
+  margin: 5px;
+}
+.info-nav{
+  text-align: center;
+}
+.info-container ul{
+  display: flex;
+  text-align: center;
+  color: rgb(94, 94, 94);
+}
+.info-container ul li{
+  list-style: none;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .item-form label {
+    font-size: 30px;
+  }
+  .item-form input {
+    font-size: 22px;
+    padding: 10px;
+  }
+  .main .container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-article {
+    width: 100%;
+  }
+  article{
+    width: 45%;
+  }
+  .info-title{
+    font-size: 45px;
+    margin: 0;
+  }
+  .info-subtitle{
+    margin: 0;
+  }
+  .info-item{
+    font-size: 18px;
+  }
+  .info-nav{
+    display: flex;
+    padding: 5px;
+  }
+}
+@media(min-width: 1024px){
+  .item-form label {
+    font-size: 50px;
+  }
+  .article-item{
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+  }
+  .banner{
+    padding: 15rem 3rem;
+  }
+  .article-img{
+    width: 65%;
+    padding: 0;
+  }
+  .article-container{
+    width: 45%;
+    padding: 5px;
+  }
+  .article-txt{
+    display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 110px;
+  margin: 0 auto;
+ 
+  line-height: 1.4;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  
+}
