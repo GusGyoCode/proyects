@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template payment-form</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/fontello.css" />
+  <style>
+    @media screen and (max-width:991px){
+      #formulariodepago{
+        height: 450px !important;
+      }
+    }
+    @media screen and (max-width:991px){
+      #formulariodepago{
+        height: 450px !important;
+      }
+    }
+    @media screen and (max-width: 575px){
+      .title-2 h2{
+        font-size: 16px !important;
+      }
+      .title-2 h2 img{
+        width: 20px !important;
+        height: 20px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col p-0">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                class="d-inline-block align-top" alt="" loading="lazy" />
+              Payment-Form
+            </a>
+            <form class="form-inline d-none d-lg-block">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+              </button>
+            </form>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main style="background-color: #f5f5f5;">
+    <div class="container p-3">
+      <div class="row justify-content-between">
+        <div class="col d-none d-lg-block">
+          <h2 style="
+                display: inline-block;
+                padding-top: 0.3125rem;
+                padding-bottom: 0.3125rem;
+                margin-right: 1rem;
+                font-size: 40px;
+                line-height: inherit;
+                white-space: nowrap;
+              ">
+            <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="65" height="65"
+              class="d-inline-block align-top" alt="" loading="lazy" />
+            Complete the transaction
+          </h2>
+        </div>
+        <div class="col-12 col-md-8 d-lg-none title-2">
+          <h2 style="
+                display: inline-block;
+                padding-top: 0.3125rem;
+                padding-bottom: 0.3125rem;
+                font-size: 25px;
+                line-height: inherit;
+                white-space: nowrap;
+                text-transform: uppercase;
+              ">
+            <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="40" height="40"
+              class="d-inline-block align-top" alt="" loading="lazy" />
+            Complete the transaction
+          </h2>
+        </div>
+        <div class="col-12 col-md-4">
+          <p>
+            How about this process for completing transactions?
+            <a href="#">Write your review</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <i class="icon-info-circled-1"></i> If you want to pay with
+            paypal, it is necessary that you first provide them with a little
+            more information. You can also select a different payment method.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <i class="icon-info-circled-1"></i> Be totally safe when entering
+            all the data, correctly remember that we do not give refund for
+            erroneous data.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <form action="">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="mb-3" style="border: 1px solid #e6e6e6; background-color: #fff;">
+              <h2 class="p-2">
+                Pay with:
+              </h2>
+              <div class="option-pay p-3" style="border-bottom: 1px solid #e6e6e6;">
+                <h6>
+                  Credit or debit card
+                </h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked style="margin-top: 15px;" />
+                  <label class="form-check-label" for="exampleRadios1">
+                    <i class="icon-credit-card" style="font-size: 30px;"></i>
+                  </label>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" id="card-number" aria-describedby="card-number"
+                      placeholder="N°. card" style="
+                          border: none;
+                          border-radius: 0px;
+                          border-bottom: 1px solid #ced4da;
+                        " />
+                    <small id="card-number" class="form-text text-muted">xxxx-xxxx-xxx-xxxx</small>
+                  </div>
+                  <div class="col-6">
+                    <input type="date" class="form-control" id="expiration-date" aria-describedby="expiration-date"
+                      placeholder="Fecha de vencimineto" style="
+                          border: none;
+                          border-radius: 0px;
+                          border-bottom: 1px solid #ced4da;
+                        " />
+                    <small id="expiration-date" class="form-text text-muted">Expiration date</small>
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" id="security-code" aria-describedby="security-code"
+                      placeholder="Security code" style="
+                          border: none;
+                          border-radius: 0px;
+                          border-bottom: 1px solid #ced4da;
+                        " />
+                    <i class="icon-info-circled-1" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Three digit code located on the back of the card." style="cursor: pointer;">
+                    </i>
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Name" style="
+                          border: none;
+                          border-radius: 0px;
+                          border-bottom: 1px solid #ced4da;
+                        " />
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" id="last-name" aria-describedby="last-name"
+                      placeholder="Last name" style="
+                          border: none;
+                          border-radius: 0px;
+                          border-bottom: 1px solid #ced4da;
+                        " />
+                  </div>
+                  <div class="col-6">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <label class="form-check-label" for="exampleCheck1">Save the data of this card for future
+                        purchases</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="option-pay p-3 mb-3" style="border-bottom: 1px solid #e6e6e6;">
+                <h6>
+                  Paypal
+                </h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"
+                    style="margin-top: 15px;" />
+                  <label class="form-check-label" for="exampleRadios2">
+                    <i class="icon-cc-paypal" style="font-size: 30px;"></i>
+                  </label>
+                </div>
+              </div>
+              <div class="option-send p-3">
+                <h2 class="p-2">
+                  Send to:
+                </h2>
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="max-height: 200px;"
+                    placeholder="Name:
+  Direction:
+  Country:
+  Postal code:
+  Contact number:"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 p-3" style="border: 1px solid #e6e6e6; background-color: #fff;">
+              <h2 class="p-2">
+                Check item and shipping
+              </h2>
+              <div class="row">
+                <div class="col-4">
+                  <img class="img-fluid" src="http://lorempixel.com/200/200/" alt="" />
+                </div>
+                <div class="col-8">
+                  <p class="mb-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo, quaerat!
+                  </p>
+                  <p class="mb-1" style="font-size: 20px;">
+                    <strong>Price: </strong>$32.50
+                  </p>
+                  <p class="mb-1" style="color: #6e6e6e;">Quantity: 1</p>
+                  <p class="mb-1">Shipping:</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadio1"
+                      value="option1" checked />
+                    <label class="form-check-label" for="exampleRadio1" style="color: #6e6e6e;">
+                      Delivery scheduled for: x day - x day
+                    </label>
+                    <p>Free</p>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadio2"
+                      value="option2" />
+                    <label class="form-check-label" for="exampleRadio2" style="color: #6e6e6e;">
+                      Delivery scheduled for: x day - x day
+                    </label>
+                    <p>59.00$</p>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadio3"
+                      value="option3" />
+                    <label class="form-check-label" for="exampleRadio3" style="color: #6e6e6e;">
+                      Delivery scheduled for: x day - x day
+                    </label>
+                    <p>99.00$</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 p-3" style="border: 1px solid #e6e6e6; background-color: #fff;">
+              <h2 class="p-2">
+                Check item and shipping
+              </h2>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Add coupons</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="
+                      border: none;
+                      border-radius: 0px;
+                      border-bottom: 1px solid #ced4da;
+                    " placeholder="xxx-xxx-xxx" />
+                <small id="emailHelp" class="form-text text-muted">please add a valid coupon</small>
+              </div>
+            </div>
+          </div>
+          <div id="formulariodepago" class="col-12 col-md-4 " style="
+                border: 1px solid #e6e6e6;
+                background-color: #fff;
+                height: 400px;
+                position: sticky;
+                top: 0px;
+              ">
+            <div class="row p-3 justify-content-between">
+              <div class="col-6">
+                <p>subtotal (1 article)</p>
+              </div>
+              <div class="col-4">
+                <p>$32.50</p>
+              </div>
+              <div class="col-6">
+                <p>Shipping</p>
+              </div>
+              <div class="col-4">
+                <p>Free</p>
+              </div>
+              <div class="w-100" style="border-bottom: 1px solid #e6e6e6;"></div>
+              <div class="col-6">
+                <p style="font-size: 20px; font-weight: bold;">Total:</p>
+              </div>
+              <div class="col-4">
+                <p style="font-size: 20px; font-weight: bold;">$32.50</p>
+              </div>
+              <div class="col-12 p-2" style="background-color: #f5f5f5;">
+                <p class="m-0">
+                  When ordering you accept the
+                  <a href="#">Terms of use</a> and
+                  <a href="#">Rrivacy notice</a>.
+                </p>
+              </div>
+              <div class="col-12 p-0 pt-3">
+                <button class="btn btn-secondary btn-lg btn-block" type="submit" style="border-radius: 0;">
+                  <i class="icon-lock"></i> Confirm and pay
+                </button>
+              </div>
+              <div class="col-12 p-0 pt-5 d-flex justify-content-center">
+                <div class="d-none d-lg-block">
+                  <h2 style="
+                        display: inline-block;
+                        padding-top: 0.3125rem;
+                        padding-bottom: 0.3125rem;
+                        font-size: 20px;
+                        line-height: inherit;
+                        white-space: nowrap;
+                        text-transform: uppercase;
+                      ">
+                    <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                      class="d-inline-block align-top" alt="" loading="lazy" />
+                    We're at your service
+                  </h2>
+                </div>
+                <div class="d-lg-none">
+                  <h2 style="
+                        display: inline-block;
+                        padding-top: 0.3125rem;
+                        padding-bottom: 0.3125rem;
+                        font-size: 15px;
+                        line-height: inherit;
+                        white-space: nowrap;
+                        text-transform: uppercase;
+                      ">
+                    <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="20" height="20"
+                      class="d-inline-block align-top" alt="" loading="lazy" />
+                    We're at your service
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-6 p-3">
+          <p style="color: #6e6e6e; font-size: 13px;">
+            Copyright &copy; 1995-2020 x.inc. All rights reserved.
+            <a href="#">Terms of use</a>, <a href="#">Privacy notice</a>,
+            <a href="#">Cookies</a> and <a href="#">AdChoice.</a><i class="icon-info-circled-1"></i>
+          </p>
+        </div>
+        <div class="col-12 col-md-2 p-3">
+          <img style="margin: auto; display: block;" src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="40" height="40" alt=""
+            loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+</body>
+
+</html>
