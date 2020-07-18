@@ -1,83 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <title>Kitchen-Recipes</title>
-</head>
-
-<body>
-
-  <header class="bg-dark" style="position: sticky; top: 0px; z-index: 10000;">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col p-0">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">
-              <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                class="d-inline-block align-top" alt="" loading="lazy" />
-              Kitchen Recipes
-            </a>
-            <form class="form-inline d-none d-lg-block">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                Search
-              </button>
-            </form>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <li class="nav-item dropleft">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item text-secondary" href="#">
-                      <img src="img/chicken.ico" alt="" style="width: 30px;">
-                      Chicken
-                    </a>
-                    <a class="dropdown-item text-secondary" href="#">
-                      <img src="img/Fish.ico" alt="" style="width: 30px;">
-                      Fish
-                    </a>
-                    <a class="dropdown-item text-secondary" href="#">
-                      <img src="img/ensalad.ico" alt="" style="width: 30px;">
-                      Ensalad
-                    </a>
-                    <a class="dropdown-item text-secondary" href="#">
-                      <img src="img/marine.ico" alt="" style="width: 30px;">
-                      Seafood
-                    </a>
-                    <a class="dropdown-item text-secondary" href="#">
-                      <img src="img/meat.ico" alt="" style="width: 30px;">
-                      Meat
-                    </a>
-                    <a class="dropdown-item text-secondary" href="#">
-                      <img src="img/cake.ico" alt="" style="width: 30px;">
-                      Cake
-                    </a>
-                    <a class="dropdown-item text-secondary" href="#">
-                      <img src="img/bread.ico" alt="" style="width: 30px;">
-                      Bread
-                    </a>
-                  </div>
-                </li>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
+<template>
+   <main>
     <aside class="container">
       <div class="row justify-content-center">
         <div class="col-12">
@@ -132,7 +54,7 @@
             <div class="card border-info mb-3" style="max-width: 18rem;">
               <div class="card-header p-1">
                 <a class="text-secondary" href="#" style="font-size: 20px;" >
-                  <img src="img/Fish.ico" alt="" style="width: 60px;">
+                  <img src="../assets/img/Fish.svg" alt="" style="width: 60px;">
                   Fish
                 </a>
               </div>
@@ -145,7 +67,7 @@
             <div class="card border-success mb-3" style="max-width: 18rem;">
               <div class="card-header p-1">
                 <a class="text-secondary" href="#" style="font-size: 20px;" >
-                  <img src="img/ensalad.ico" alt="" style="width: 60px;">
+                  <img src="../assets/img/ensalad.svg" alt="" style="width: 60px;">
                   Ensalad
                 </a>
               </div>
@@ -157,7 +79,7 @@
             </div>
             <div class="card border-info mb-3" style="max-width: 18rem;">
               <div class="card-header p-1"><a class="text-secondary" href="#" style="font-size: 20px;" >
-                <img src="img/marine.ico" alt="" style="width: 60px;">
+                <img src="../assets/img/marine.svg" alt="" style="width: 60px;">
                 Marine
               </a></div>
               <div class="card-body text-info">
@@ -169,7 +91,7 @@
             <div class="card border-warning mb-3" style="max-width: 18rem;">
               <div class="card-header p-1" style="border: none">
                 <a class="text-secondary" href="#" style="font-size: 20px;" >
-                  <img src="img/chicken.ico" alt="" style="width: 60px;">
+                  <img src="../assets/img/chicken.svg" alt="" style="width: 60px;">
                   Chicken
                 </a>
               </div>       
@@ -177,7 +99,7 @@
             <div class="card border-danger mb-3" style="max-width: 18rem;">
               <div class="card-header p-1">
                 <a class="text-secondary" href="#" style="font-size: 20px;" >
-                  <img src="img/meat.ico" alt="" style="width: 60px;">
+                  <img src="../assets/img/meat.svg" alt="" style="width: 60px;">
                   Meat
                 </a>
               </div>
@@ -190,7 +112,7 @@
             <div class="card border-danger mb-3" style="max-width: 18rem;">
               <div class="card-header p-1">
                 <a class="text-secondary" href="#" style="font-size: 20px;" >
-                  <img src="img/cake.ico" alt="" style="width: 60px;">
+                  <img src="../assets/img/cake.svg" alt="" style="width: 60px;">
                   Cake
                 </a>
               </div>
@@ -203,7 +125,7 @@
             <div class="card border-warning mb-3" style="max-width: 18rem;">
               <div class="card-header p-1">
                 <a class="text-secondary" href="#" style="font-size: 20px;" >
-                  <img src="img/bread.ico" alt="" style="width: 60px;">
+                  <img src="../assets/img/bread.svg" alt="" style="width: 60px;">
                   Bread
                 </a>
               </div>
@@ -338,42 +260,9 @@
       </div>
     </aside>
   </main>
-  <footer>
-    <div class="container bg-dark p-3">
-      <div class="row">
-        <div class="col-auto border-right">
-          <a class="text-light" href="#">&copy; Kitchen-Recipes 2020</a>
-        </div>
-        <div class="col-auto border-right">
-          <a class="text-light" href="#">About us?</a>
-        </div>
-        <div class="col-auto border-right">
-          <a class="text-light" href="#">Contact us</a>
-        </div>
-        <div class="col-auto border-right">
-          <a class="text-light" href="#">Terms and Conditions</a>
-        </div>
-        <div class="col-auto border-right">
-          <a class="text-light" href="#">Privacy Policy</a>
-        </div>
-        <div class="col-auto border-right">
-          <a class="text-light" href="#">Cookie Policies</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+</template>
+<script>
+export default {
+  name: 'MainComponent'
+}
+</script>
